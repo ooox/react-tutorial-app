@@ -10,7 +10,7 @@ function HomeGuest() {
   async function handleSubmit(e) {
     e.preventDefault()
     try {
-      await Axios.post('http://localhost:8080/register', {username, email, password}) // if param name eq value variable, it can be simplified
+      await Axios.post('/register', {username, email, password}) // if param name eq value variable, it can be simplified
       console.log('dat be success')
     } catch(e) {
       console.log(`There was an error ${e}`)
